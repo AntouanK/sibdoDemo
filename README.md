@@ -3,7 +3,7 @@ sibdoDemo
 
 usage : 
 
-( first run ```npm update``` to get the dependancies )
+( first run ```npm update``` to get the dependencies )
 
 ```>node demo.js```
 
