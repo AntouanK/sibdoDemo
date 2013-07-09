@@ -2,6 +2,7 @@ sibdoDemo
 =========
 
 usage : 
+( first run npm update to get the dependancies )
 ```>node demo.js```
 
 ```Javascript
