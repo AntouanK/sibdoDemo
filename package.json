@@ -1,6 +1,6 @@
 {
 	"name": "sibdocity_demo",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Karamitros Antonis",
 	"description": "a simple Wikipedia test demo for sibdocity",
 	"main": "./demo.js",
