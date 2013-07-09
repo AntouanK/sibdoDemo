@@ -8,7 +8,6 @@ var sDemo = (function(){
 	
 	//	importing modules
 	var	http = require('http'),
-		url = require('url'),
 		fs = require('fs'),
 		cheerio = require('cheerio');
 		////////////////////
@@ -39,8 +38,12 @@ var sDemo = (function(){
 			path: '/wiki/' + normQuery
 		};
 
+		//	we could also use the search page of wikipedia, for example :
+		//	http://en.wikipedia.org/w/index.php?search=New+York+City&title=Special%3ASearch
+
 		console.log('searchWiki> Trying to get ' + options.host + options.path + ' ...');
 
+		//	get the wikipedia page...
 		http.get(options, function(res) {
 			var htmlData = '';	//	our get data buffer
 
@@ -203,7 +206,7 @@ var sDemo = (function(){
 	};
 
 }());
-
+///////////////////////////////////////
 
 //	initially load from index.json
 sDemo.loadIndex();
