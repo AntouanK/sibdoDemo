@@ -1,5 +1,7 @@
-//	node short demo for sibdocity
-//	Antonis Karamitros July 2013
+/************************************
+*	node short demo for sibdocity 	*
+*	Antonis Karamitros July 2013	*
+************************************/
 
 //	main demo namespace
 var sDemo = (function(){
@@ -11,6 +13,7 @@ var sDemo = (function(){
 		cheerio = require('cheerio');
 		////////////////////
 
+	//	our object to keep the articles titles and their tags
 	var globalIndex = {
 		articles: {}, // every article will have--> title: tags[]
 		totalTags: 0
@@ -19,7 +22,14 @@ var sDemo = (function(){
 	//	function to make queries to wikipedia
 	var searchWiki = function (query) {
 
-		
+		/* memoization pattern */
+		if(searchWiki.cache[query]){	//	check if query is cached
+			console.log('searchWiki> result is cached');
+			//	we resume the process with the cached result
+			processArticle(searchWiki.cache[query]);
+			return ;
+		}
+
 		//	change spaces to underscore for wiki normalization
 		var normQuery = query.replace(/\s+/g,'_'),
 		//	our options for 'getting' wikipedia
@@ -29,36 +39,38 @@ var sDemo = (function(){
 			path: '/wiki/' + normQuery
 		};
 
-		console.log('Trying to get ' + options.host + options.path + ' ...');
+		console.log('searchWiki> Trying to get ' + options.host + options.path + ' ...');
 
 		http.get(options, function(res) {
 			var htmlData = '';	//	our get data buffer
 
-			res
-			.on('data', function (tmpData) {
-					htmlData+=tmpData;	//	append every chunk here
-				})
-				.on('end',function(){	//	on end...
-
+			res.on('data', function (tmpData) {
+				htmlData+=tmpData;	//	append every chunk here
+			}).on('end',function(){	//	on end...
+				if(htmlData){
+					searchWiki.cache[query] = htmlData;	//	we supposedly keep a cache here
 					processArticle(htmlData);
-				});
-
+				}
+			});
 		}).on('error', function(e) {
-			console.log("Got error: " + e.message);
+			console.log("searchWiki> Got error: " + e.message);
 		});
+
 	};
+	searchWiki.cache = {};	//	set up the cache /* memoization pattern */
 
 
 	//	helper function to save files
+	//	if force is true, overwrite current file
 	var saveToFile = function (fileName, text, force) {
 
 		var basePath = "./wikiPages/";	//	our path to save files
 		
 		//	check if file already exists
 		fs.exists(basePath+fileName, function (exists) {
-			console.log(exists ? "it's there" : "ready to write...");
 
 			if(exists && !force){
+				console.log('saveToFile> file already exists!');
 				return false;
 			}
 		});
@@ -70,11 +82,17 @@ var sDemo = (function(){
 		        console.log(fileName+" was saved!");
 		    }
 		}); 
+
 	};
 
 	//	function to check whether a valid article was found, and process it
-	//	retuns boolean
+	//	retuns boolean according to success or failure
 	var processArticle = function (htmlData) {
+
+		if(!htmlData){
+			console.log('processArticle> nothing to process')
+			return false;
+		}
 		
 		var $ = cheerio.load(htmlData),	//	use cheerio to handle 'DOM' elements
 			//	make regExp for no article cases
@@ -85,17 +103,17 @@ var sDemo = (function(){
 
 		//	first check if article is valid
 		if(body.match(noArticle) !== null){
-			console.log('no article is found!!');
+			console.log('processArticle> no article is found!!');
 			return false;
 		} else if(body.match(refersTo) !== null){
-			console.log('found a referrer!');
+			console.log('processArticle> found a referrer!');
 			return false;
 		}
 
 		//	if article is valid...
 		var tags = [];	//	make tags array
 
-		console.log('head title: '+headTitle);
+		console.log('processArticle> head title: '+headTitle);
 
 		//	search for categories
 		$('#mw-normal-catlinks li').each(function(i,ele){
@@ -114,14 +132,14 @@ var sDemo = (function(){
 	}
 
 	//	make index for this article and it's tags
-	var indexThisArticle = function (name,tags) {
+	var indexThisArticle = function (articleName,tags) {
 		
-		if(globalIndex.articles[name]){
-			console.log(name+' is already indexed');
+		if(globalIndex.articles[articleName]){
+			console.log('indexThisArticle> ' + articleName + ' is already indexed');
 			return false;
 		}
 
-		globalIndex.articles[name] = tags;
+		globalIndex.articles[articleName] = tags;
 		globalIndex.totalTags+=tags.length;
 
 		saveToFile('index.json',JSON.stringify(globalIndex), true);
@@ -131,19 +149,28 @@ var sDemo = (function(){
 
 	//	load global indexes
 	var loadIndex = function(){
+
 		fs.readFile('wikiPages/index.json', function (err, data) {
+
 			if (err){
 				return false;
 			}
 
-			globalIndex = JSON.parse(data);
-			if(data){
-				console.log('index loaded '+JSON.stringify(globalIndex));
+			var loadedJSON = JSON.parse(data);
+
+			if(loadedJSON.articles){
+				globalIndex.articles = loadedJSON.articles;
+				globalIndex.totalTags = loadedJSON.totalTags;
+				console.log('loadIndex> index loaded');
 			}
 		});
+
+		return true;
 	};
 
+	//	search our global index by tag(s) to find articles that contain this tag(s)
 	var searchByTag = function (tag) {
+
 		var tags = tag.toLowerCase().split(','),
 			success = [];
 
@@ -159,11 +186,12 @@ var sDemo = (function(){
 		}
 
 		if(success.length){
-			console.log('Found ' + success.join(',') + ' with these tags');
+			console.log('searchByTag> Found ' + success.join(',') + ' with these tags');
 		} else {
-			console.log('Sorry, this tag was not found');
+			console.log('searchByTag> Sorry, this tag was not found');
 		}
 
+		return true;
 	};
 
 	//	expose our functions
@@ -176,6 +204,8 @@ var sDemo = (function(){
 
 }());
 
+
+//	initially load from index.json
 sDemo.loadIndex();
 
 //////////////////////////////
