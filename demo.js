@@ -21,6 +21,8 @@ var sDemo = (function(){
 	//	function to make queries to wikipedia
 	var searchWiki = function (query) {
 
+		query = query.trim();
+		
 		/* memoization pattern */
 		if(searchWiki.cache[query]){	//	check if query is cached
 			console.log('searchWiki> result is cached');

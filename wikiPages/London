@@ -922,7 +922,7 @@ Map of <a href="/wiki/Central_London" title="Central London">central London</a><
 </ol>
 </td>
 <td style="background:white; padding:0 1em;" class="toccolours">
-<div class="noresize" style="height: 197px; width: 250px; "><map name="ImageMap_2_461305406" id="ImageMap_2_461305406">
+<div class="noresize" style="height: 197px; width: 250px; "><map name="ImageMap_1_427375560" id="ImageMap_1_427375560">
 <area href="/wiki/City_of_London" shape="poly" coords="129,91,126,85,121,86,119,88,121,90,122,91,126,92" alt="City of London" title="City of London" />
 <area href="/wiki/City_of_Westminster" shape="poly" coords="114,102,107,102,105,94,99,97,90,84,95,82,95,79,100,77,103,78,106,77,108,85,112,85,114,88,118,88,120,90,116,93,114,98" alt="City of Westminster" title="City of Westminster" />
 <area href="/wiki/Royal_Borough_of_Kensington_and_Chelsea" shape="poly" coords="105,96,100,98,96,93,91,87,90,85,86,85,88,89,87,89,89,98,98,106,99,103,108,102" alt="Kensington and Chelsea" title="Kensington and Chelsea" />
@@ -955,7 +955,7 @@ Map of <a href="/wiki/Central_London" title="Central London">central London</a><
 <area href="/wiki/London_Borough_of_Enfield" shape="poly" coords="142,29,142,33,143,35,138,41,139,45,134,43,130,45,114,44,109,43,111,33,104,19,95,16,100,9,100,1,105,5,113,4,118,7,127,7,131,9,145,10,145,25" alt="Enfield" title="Enfield" />
 <area href="/wiki/London_Borough_of_Barnet" shape="poly" coords="61,29,64,28,68,27,74,29,79,12,84,25,90,17,95,17,104,20,111,34,109,44,103,48,104,57,101,63,97,64,91,72,88,72,79,59,77,62,77,56,59,33" alt="Barnet" title="Barnet" />
 <area href="/wiki/London_Borough_of_Harrow" shape="poly" coords="61,30,29,45,39,72,52,70,54,60,62,55,66,57,65,54,70,48,59,34" alt="Harrow" title="Harrow" />
-<area href="/wiki/London_Borough_of_Hillingdon" shape="poly" coords="1,36,12,42,18,40,29,44,38,72,26,81,36,85,21,119,3,110,5,94,3,78,9,70,0,52" alt="Hillingdon" title="Hillingdon" /></map><img alt="London-boroughs.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/London-boroughs.svg/250px-London-boroughs.svg.png" width="250" height="197" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/London-boroughs.svg/375px-London-boroughs.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/29/London-boroughs.svg/500px-London-boroughs.svg.png 2x" usemap="#ImageMap_2_461305406" />
+<area href="/wiki/London_Borough_of_Hillingdon" shape="poly" coords="1,36,12,42,18,40,29,44,38,72,26,81,36,85,21,119,3,110,5,94,3,78,9,70,0,52" alt="Hillingdon" title="Hillingdon" /></map><img alt="London-boroughs.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/London-boroughs.svg/250px-London-boroughs.svg.png" width="250" height="197" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/London-boroughs.svg/375px-London-boroughs.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/29/London-boroughs.svg/500px-London-boroughs.svg.png 2x" usemap="#ImageMap_1_427375560" />
 <div style="margin-left: 230px; margin-top: -20px; text-align: left;"><a href="/wiki/File:London-boroughs.svg" title="About this image"><img alt="About this image" src="//bits.wikimedia.org/static-1.22wmf8/extensions/ImageMap/desc-20.png" style="border: none;" /></a></div>
 </div>
 </td>
@@ -4039,7 +4039,7 @@ public spaces</th>
 <li><span style="position: relative; top: 0.2em;"><sup>2</sup></span> Entirely in <a href="/wiki/Western_Asia" title="Western Asia">Southwest Asia</a> but having socio-political connections with Europe</li>
 <li><span style="position: relative; top: 0.2em;"><sup>3</sup></span> <a href="/wiki/List_of_states_with_limited_recognition" title="List of states with limited recognition">Partially recognised country</a></li>
 <li><span style="position: relative; top: 0.2em;"><sup>4</sup></span> <a href="/wiki/Crown_dependencies" title="Crown dependencies">Crown Dependency</a> or <a href="/wiki/British_Overseas_Territories" title="British Overseas Territories">Overseas Territory</a> of the <a href="/wiki/United_Kingdom" title="United Kingdom">United Kingdom</a></li>
-<li><span style="position: relative; top: 0.2em;"><sup>5</sup></span> Also the seat of the <a href="/wiki/European_Union" title="European Union">European Union</a>, see <a href="/wiki/Location_of_European_Union_institutions" title="Location of European Union institutions">Location of European Union institutions</a> and <a href="/wiki/Brussels_and_the_European_Union" title="Brussels and the European Union">Brussels and the European Union</a></li>
+<li><span style="position: relative; top: 0.2em;"><sup>5</sup></span> Also the seat of the <a href="/wiki/European_Union" title="European Union">European Union</a>, see <a href="/wiki/Location_of_European_Union_institutions" title="Location of European Union institutions" class="mw-redirect">Location of European Union institutions</a> and <a href="/wiki/Brussels_and_the_European_Union" title="Brussels and the European Union">Brussels and the European Union</a></li>
 <li><span style="position: relative; top: 0.2em;"><sup>6</sup></span> Also the capital of the <a href="/wiki/Kingdom_of_the_Netherlands" title="Kingdom of the Netherlands">Kingdom of the Netherlands</a></li>
 </ul>
 </div>
@@ -4480,11 +4480,23 @@ Post‐expand include size: 1029331/2048000 bytes
 Template argument size: 101841/2048000 bytes
 Highest expansion depth: 25/40
 Expensive parser function count: 44/500
-Lua time usage: 0.885s
-Lua memory usage: 3.08 MB
+Lua time usage: 1.295s
+Lua memory usage: 3.18 MB
+Lua Profile:
+    Scribunto_LuaSandboxCallback::getExpandedArgument               1680 ms     47.7%
+    Scribunto_LuaSandboxCallback::getAllExpandedArguments            360 ms     10.2%
+    recursiveClone <mw.lua:109>                                      260 ms      7.4%
+    Scribunto_LuaSandboxCallback::toString                           160 ms      4.5%
+    mw.executeModule <mw.lua:142>                                    120 ms      3.4%
+    <mw.lua:622>                                                     100 ms      2.8%
+    Scribunto_LuaSandboxCallback::gsub                               100 ms      2.8%
+    type                                                              80 ms      2.3%
+    ?                                                                 40 ms      1.1%
+    (for generator)                                                   40 ms      1.1%
+    [others]                                                         580 ms     16.5%
 -->
 
-<!-- Saved in parser cache with key enwiki:pcache:idhash:17867-0!*!0!!en!4!* and timestamp 20130709082337 -->
+<!-- Saved in parser cache with key enwiki:pcache:idhash:17867-0!*!0!!en!4!* and timestamp 20130709103610 -->
 </div>								<div class="printfooter">
 				Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=London&amp;oldid=563492644">http://en.wikipedia.org/w/index.php?title=London&amp;oldid=563492644</a>"				</div>
 												<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Categories" title="Help:Categories">Categories</a>: <ul><li><a href="/wiki/Category:London" title="Category:London">London</a></li><li><a href="/wiki/Category:Arthurian_locations" title="Category:Arthurian locations">Arthurian locations</a></li><li><a href="/wiki/Category:British_capitals" title="Category:British capitals">British capitals</a></li><li><a href="/wiki/Category:Capitals_in_Europe" title="Category:Capitals in Europe">Capitals in Europe</a></li><li><a href="/wiki/Category:Populated_places_established_in_the_1st_century" title="Category:Populated places established in the 1st century">Populated places established in the 1st century</a></li><li><a href="/wiki/Category:Port_cities_and_towns_in_England" title="Category:Port cities and towns in England">Port cities and towns in England</a></li><li><a href="/wiki/Category:Post_towns_in_postcode_areas_covering_London" title="Category:Post towns in postcode areas covering London">Post towns in postcode areas covering London</a></li><li><a href="/wiki/Category:Staple_ports" title="Category:Staple ports">Staple ports</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">All articles with dead external links</a></li><li><a href="/wiki/Category:Articles_with_dead_external_links_from_May_2011" title="Category:Articles with dead external links from May 2011">Articles with dead external links from May 2011</a></li><li><a href="/wiki/Category:Articles_with_dead_external_links_from_February_2012" title="Category:Articles with dead external links from February 2012">Articles with dead external links from February 2012</a></li><li><a href="/wiki/Category:Articles_with_dead_external_links_from_May_2013" title="Category:Articles with dead external links from May 2013">Articles with dead external links from May 2013</a></li><li><a href="/wiki/Category:Use_British_English_from_May_2012" title="Category:Use British English from May 2012">Use British English from May 2012</a></li><li><a href="/wiki/Category:Wikipedia_indefinitely_semi-protected_pages" title="Category:Wikipedia indefinitely semi-protected pages">Wikipedia indefinitely semi-protected pages</a></li><li><a href="/wiki/Category:Wikipedia_indefinitely_move-protected_pages" title="Category:Wikipedia indefinitely move-protected pages">Wikipedia indefinitely move-protected pages</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_December_2012" title="Category:Wikipedia articles needing clarification from December 2012">Wikipedia articles needing clarification from December 2012</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_April_2013" title="Category:Articles with unsourced statements from April 2013">Articles with unsourced statements from April 2013</a></li><li><a href="/wiki/Category:Vague_or_ambiguous_time_from_December_2012" title="Category:Vague or ambiguous time from December 2012">Vague or ambiguous time from December 2012</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_2010" title="Category:Articles containing potentially dated statements from 2010">Articles containing potentially dated statements from 2010</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_July_2013" title="Category:Articles with unsourced statements from July 2013">Articles with unsourced statements from July 2013</a></li><li><a href="/wiki/Category:Good_articles" title="Category:Good articles">Good articles</a></li><li><a href="/wiki/Category:Use_dmy_dates_from_October_2012" title="Category:Use dmy dates from October 2012">Use dmy dates from October 2012</a></li><li><a href="/wiki/Category:Articles_including_recorded_pronunciations_(UK_English)" title="Category:Articles including recorded pronunciations (UK English)">Articles including recorded pronunciations (UK English)</a></li></ul></div></div>												<div class="visualClear"></div>
@@ -4764,7 +4776,7 @@ Lua memory usage: 3.08 MB
 			<li class="interwiki-simple"><a href="//simple.wikipedia.org/wiki/London" title="London" lang="simple" hreflang="simple">Simple English</a></li>
 			<li class="interwiki-sk"><a href="//sk.wikipedia.org/wiki/Lond%C3%BDn" title="Londýn" lang="sk" hreflang="sk">Slovenčina</a></li>
 			<li class="interwiki-sl"><a href="//sl.wikipedia.org/wiki/London" title="London" lang="sl" hreflang="sl">Slovenščina</a></li>
-			<li class="interwiki-cu"><a href="//cu.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BD%D0%B4%D0%BE%D0%BD%D1%8A" title="Лондонъ" lang="cu" hreflang="cu">Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔ���Ⱏ</a></li>
+			<li class="interwiki-cu"><a href="//cu.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BD%D0%B4%D0%BE%D0%BD%D1%8A" title="Лондонъ" lang="cu" hreflang="cu">Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ</a></li>
 			<li class="interwiki-szl"><a href="//szl.wikipedia.org/wiki/L%C5%AFnd%C5%AFn" title="Lůndůn" lang="szl" hreflang="szl">Ślůnski</a></li>
 			<li class="interwiki-so"><a href="//so.wikipedia.org/wiki/London" title="London" lang="so" hreflang="so">Soomaaliga</a></li>
 			<li class="interwiki-ckb"><a href="//ckb.wikipedia.org/wiki/%D9%84%DB%95%D9%86%D8%AF%DB%95%D9%86" title="لەندەن" lang="ckb" hreflang="ckb">کوردی</a></li>
@@ -4844,6 +4856,6 @@ mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
 mw.loader.load(["mediawiki.action.view.postEdit","mobile.desktop","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","mw.MwEmbedSupport.style","ext.vector.collapsibleNav","ext.articleFeedbackv5.startup","schema.Edit","ext.visualEditor.splitTest","ext.markAsHelpful","ext.gettingstarted.logging","ext.gettingstarted.openTask","ext.navigationTiming","mw.PopUpMediaTransform"],null,true);
 }</script>
 <script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
-<!-- Served by mw1169 in 0.257 secs. -->
+<!-- Served by mw1090 in 0.349 secs. -->
 	</body>
 </html>
